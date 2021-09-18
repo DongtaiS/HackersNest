@@ -16,8 +16,7 @@ PhysicsComponent::~PhysicsComponent()
 
 void PhysicsComponent::OnAddToWorld()
 {
-    //    GameEngine::Component::OnAddToWorld();
-    Component::OnAddToWorld();
+    CollidablePhysicsComponent::OnAddToWorld();
 }
 
 void PhysicsComponent::Update()
@@ -25,20 +24,20 @@ void PhysicsComponent::Update()
     float dt = GameEngine::GameEngineMain::GetTimeDelta();
     float currentY = GetEntity()->GetPos().y;
 
-    float gForce = 0.000000000000001f;
+    float gForce = 700.f;
 
     if (dt > 0.f)
     {
         m_velocity.x = m_wantedVelocity.x;
+        std::cout << gForce * dt << std::endl;
         m_velocity.y += gForce * dt;
         sf::Vector2f deltavelocity = dt * m_velocity;
-        std::cout << deltavelocity.y << " " << dt << std::endl;
         GetEntity()->SetPos(GetEntity()->GetPos() + deltavelocity);
     }
 
     CollidablePhysicsComponent::Update();
 
-    float deltaY = GetEntity()->GetPos().y + currentY;
+    float deltaY = GetEntity()->GetPos().y - currentY;
     if (dt > 0.f)
     {
         m_velocity.y = deltaY / dt;

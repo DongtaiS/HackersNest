@@ -16,9 +16,9 @@ using namespace Game;
 GameBoard::GameBoard()
 {
 	CreatePlayer();
-	//CreateBlock();
-	//GameEngine::Entity* floor = GameEngine::BlockCreationManager::CreateBlock(sf::Vector2f(100, 400), sf::Vector2f(300, 50), sf::Color::White);
-	//floor->AddComponent<GameEngine::CollidablePhysicsComponent>();
+	CreateBlock();
+	GameEngine::Entity* floor = GameEngine::BlockCreationManager::CreateBlock(sf::Vector2f(100, 400), sf::Vector2f(300, 50), sf::Color::White);
+	floor->AddComponent<GameEngine::CollidablePhysicsComponent>();
 }
 
 
@@ -38,7 +38,6 @@ void GameBoard::CreatePlayer()
 	m_player = GameEngine::BlockCreationManager::CreateBlock(sf::Vector2f(10, 10), sf::Vector2f(200, 200), sf::Color::Red);
 
 	m_player->AddComponent<GameEngine::PlayerMovementComponent>();
-	m_player->AddComponent<GameEngine::CollidableComponent>();
 	m_player->AddComponent<GameEngine::PhysicsComponent>();
 }
 

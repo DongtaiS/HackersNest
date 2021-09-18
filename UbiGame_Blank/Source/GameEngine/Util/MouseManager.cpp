@@ -36,16 +36,14 @@ void MouseManager::Update()
         if (rect.contains(mousePos) && click)
         {
             m_clickedEntity = colComponent->GetEntity();
-            m_mouseDownPos = mousePos;
-            m_clickedEntityPos = colComponent->GetEntity()->GetPos();
         }
     }
 
     if (m_isMouseDown && m_clickedEntity)
     {
-        m_clickedEntity->SetPos(m_clickedEntityPos + (mousePos - m_mouseDownPos));
+        m_clickedEntity->SetPos(m_clickedEntity->GetPos() + (mousePos - m_lastMousePos));
     }
-
+    m_lastMousePos = mousePos;
 }
 
 
