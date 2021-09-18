@@ -1070,6 +1070,7 @@ CMakeFiles/HackersNest.dir/UbiGame_Blank/Source/GameEngine/GameEngineMain.cpp.o
  /Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/Util/AnimationManager.h
  /Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/Util/ButtonManager.h
  /Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/Util/CameraManager.h
+ /Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/Util/MouseManager.h
  /Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/Util/TextureManager.h
 CMakeFiles/HackersNest.dir/UbiGame_Blank/Source/GameEngine/Util/AnimationManager.cpp.o
  ../SFML-2.5.0/include/SFML/System/Vector2.hpp

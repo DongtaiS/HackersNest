@@ -15,12 +15,12 @@ PlayerMovementComponent::~PlayerMovementComponent()
 
 void PlayerMovementComponent::OnAddToWorld() 
 {
-    __super::OnAddToWorld();
+//    GameEngine::Component::OnAddToWorld();
+    Component::OnAddToWorld();
 }
 
 void PlayerMovementComponent::Update()
 {
-    __super::Update();
     Component::Update();
 
     //Grabs how much time has passed since last frame

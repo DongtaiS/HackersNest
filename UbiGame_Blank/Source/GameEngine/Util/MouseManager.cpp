@@ -43,7 +43,11 @@ void MouseManager::Update()
 
     if (m_isMouseDown)
     {
-        m_clickedEntity->SetPos(m_clickedEntity->GetPos() + (mousePos - m_mouseDownPos));
+        if(m_clickedEntity)
+        {
+            m_clickedEntity->SetPos(m_clickedEntity->GetPos() + (mousePos - m_mouseDownPos));
+        }
+
     }
 
 }
