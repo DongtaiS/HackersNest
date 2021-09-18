@@ -41,7 +41,7 @@ void CollidablePhysicsComponent::Update()
 		CollidableComponent* colComponent = collidables[a];
 		if (colComponent == this)
 			continue;
-
+		colComponent->GetEntity();
 		AABBRect intersection;
 		AABBRect myBox = GetWorldAABB();
 		AABBRect colideBox = colComponent->GetWorldAABB();
