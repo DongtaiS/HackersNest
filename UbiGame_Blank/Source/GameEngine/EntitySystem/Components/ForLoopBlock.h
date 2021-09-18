@@ -1,6 +1,6 @@
 #pragma once
 #include "GameEngine/EntitySystem/Component.h"
-#include "GameEngine/EntitySystem/Component.h"
+#include "GameEngine/EntitySystem/Components/MethodBlockComponent.h"
 namespace GameEngine
 {
 	class ForLoopBlock : public GameEngine::Component

@@ -1,5 +1,4 @@
 #include "TextRenderComponent.h"
-
 #include <assert.h>
 
 #include "GameEngine/GameEngineMain.h"
@@ -23,7 +22,7 @@ void TextRenderComponent::Render(sf::RenderTarget* target)
         return;
     }
 
-    m_text.setPosition(GetEntity()->GetPos());
+    m_text.setPosition(GetEntity()->GetPos() - GetEntity()->GetSize()/2.f);
     m_text.setRotation(GetEntity()->GetRot());
     target->draw(m_text);
 }

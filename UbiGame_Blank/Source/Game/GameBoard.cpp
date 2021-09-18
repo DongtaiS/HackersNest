@@ -1,10 +1,12 @@
 #include "GameBoard.h"
 
 #include "GameEngine/GameEngineMain.h"
+#include "GameEngine/Util/BlockCreationManager.h"
 #include "GameEngine/EntitySystem/Components/PlayerMovementComponent.h"
 #include "GameEngine/EntitySystem/Components/CollidablePhysicsComponent.h"
 #include "GameEngine/EntitySystem/Components/CollidablePushComponent.h"
-
+#include "GameEngine/EntitySystem/Components/CreateBrickComponent.h"
+#include "GameEngine/EntitySystem/Components/TextRenderComponent.h"
 using namespace Game;
 
 GameBoard::GameBoard()
@@ -27,27 +29,24 @@ void GameBoard::Update()
 
 void GameBoard::CreatePlayer()
 {
-	m_player = new GameEngine::Entity();
+	m_player = GameEngine::BlockCreationManager::CreateBlock(sf::Vector2f(10, 10), sf::Vector2f(200, 200), sf::Color::Red);
 	GameEngine::GameEngineMain::GetInstance()->AddEntity(m_player);
 
-	m_player->SetSize(sf::Vector2f(200.0f, 200.0f));
-	m_player->SetPos(sf::Vector2f(10.0f, 10.0f));
-
-	GameEngine::RenderComponent* render = static_cast<GameEngine::RenderComponent*>(m_player->AddComponent<GameEngine::RenderComponent>());
 	m_player->AddComponent<GameEngine::PlayerMovementComponent>();
 	m_player->AddComponent<GameEngine::CollidableComponent>();
-	render->SetFillColor(sf::Color::Red);
 }
 
 void GameBoard::CreateBlock()
 {
-	m_block = new GameEngine::Entity();
+	m_block = GameEngine::BlockCreationManager::CreateBlock(sf::Vector2f(20, 300), sf::Vector2f(50, 50), sf::Color::Blue);
 	GameEngine::GameEngineMain::GetInstance()->AddEntity(m_block);
-
-	m_block->SetSize(sf::Vector2f(50.0f, 50.0f));
-	m_block->SetPos(sf::Vector2f(300.0f, 10.0f));
-
-	GameEngine::RenderComponent* render = static_cast<GameEngine::RenderComponent*>(m_block->AddComponent<GameEngine::RenderComponent>());
 	m_block->AddComponent<GameEngine::CollidablePushComponent>();
-	render->SetFillColor(sf::Color::Blue);
-}
+	GameEngine::CreateBricksComponent* createBrickComp = static_cast<GameEngine::CreateBricksComponent*>(m_block->AddComponent<GameEngine::CreateBricksComponent>());
+
+	GameEngine::TextRenderComponent* text = static_cast<GameEngine::TextRenderComponent*>(m_block->AddComponent<GameEngine::TextRenderComponent>());
+	text->SetFont("Avant_Garde.ttf");
+	text->SetColor(sf::Color::White);
+	text->SetCharacterSizePixels(20);
+	text->SetFillColor(sf::Color::Transparent);
+	text->SetString("goal!!!");}
+

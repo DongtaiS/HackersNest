@@ -49,7 +49,6 @@ void CollidablePushComponent::Update()
 		if (myBox.intersects(colideBox, intersection))
 		{
 			sf::Vector2f pos = sf::Vector2f(0,0);
-			std::cout << pos.x << std::endl;
 			if (intersection.width < intersection.height)
 			{
 				if (myBox.left < colideBox.left)
@@ -61,10 +60,9 @@ void CollidablePushComponent::Update()
 			{
 				if (myBox.top < colideBox.top)
 					pos.y -= intersection.height;
-				else
+				else if (myBox.top > colideBox.top)
 					pos.y += intersection.height;
 			}
-			std::cout << pos.x << std::endl;
 			GetEntity()->SetPos(GetEntity()->GetPos() + pos);
 		}
 	}

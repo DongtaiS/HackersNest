@@ -8,7 +8,7 @@ namespace GameEngine
 		MethodBlockComponent();
 		~MethodBlockComponent();
 
-		virtual void Run();
+		virtual void Run(int iterations);
 	};
 }
 

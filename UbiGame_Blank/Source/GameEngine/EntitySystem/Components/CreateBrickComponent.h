@@ -1,10 +1,14 @@
 #pragma once
 #include "GameEngine/EntitySystem/Components/MethodBlockComponent.h"
-class CreateBricksComponent : public GameEngine::MethodBlockComponent
+namespace GameEngine
 {
-public:
-	CreateBricksComponent();
-	~CreateBricksComponent();
-	virtual void Run() override;
-};
+	class CreateBricksComponent : public GameEngine::MethodBlockComponent
+	{
+	public:
+		CreateBricksComponent();
+		~CreateBricksComponent();
+		virtual void Run(int iterations) override;
+		GameEngine::Entity* m_brick;
+	};
+}
 

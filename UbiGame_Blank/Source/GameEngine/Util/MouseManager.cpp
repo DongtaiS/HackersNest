@@ -1,5 +1,4 @@
 #include "MouseManager.h"
-#include <iostream>
 using namespace GameEngine;
 
 MouseManager* MouseManager::sm_instance = nullptr;
@@ -24,6 +23,7 @@ void MouseManager::Update()
     else
     {
         m_isMouseDown = false;
+        m_clickedEntity = nullptr;
     }
 
     std::vector<CollidableComponent*>& collidables = CollisionManager::GetInstance()->GetCollidables();
@@ -31,12 +31,10 @@ void MouseManager::Update()
     {
         CollidableComponent* colComponent = collidables[a];
         GameEngine::Entity* entity = colComponent->GetEntity();
-        sf::Vector2 topLeft = sf::Vector2(entity->GetPos().x - entity->GetSize().x / 2, entity->GetPos().y - entity->GetSize().y / 2);
+        sf::Vector2 topLeft = entity->GetPos() - entity->GetSize()/2.f;
         sf::Rect rect = sf::Rect(topLeft, entity->GetSize());
-        std::cout << mousePos.x << " " << mousePos.y << " " << std::to_string(click) << std::endl;
         if (rect.contains(mousePos) && click)
         {
-            std::cout << "inside click" << std::endl;
             m_clickedEntity = colComponent->GetEntity();
             m_mouseDownPos = mousePos;
             m_clickedEntityPos = colComponent->GetEntity()->GetPos();
@@ -45,13 +43,11 @@ void MouseManager::Update()
 
     if (m_isMouseDown && m_clickedEntity)
     {
-        std::cout << m_mouseDownPos.x << " " << m_mouseDownPos.y << std::endl;
         m_clickedEntity->SetPos(m_clickedEntityPos + (mousePos - m_mouseDownPos));
     }
 
-    }
-
 }
+
 
 MouseManager::MouseManager()
 {

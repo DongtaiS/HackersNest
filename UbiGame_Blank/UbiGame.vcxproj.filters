@@ -99,6 +99,9 @@
     <ClCompile Include="Source\GameEngine\EntitySystem\Components\CreateBrickComponent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\GameEngine\Util\BlockCreationManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\GameEngine\GameEngineMain.h">
@@ -179,5 +182,11 @@
     <ClInclude Include="Source\GameEngine\EntitySystem\Components\CreateBrickComponent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Source\GameEngine\Util\BlockCreationManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Resources\TheLima.otf" />
   </ItemGroup>
 </Project>
