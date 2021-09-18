@@ -17,9 +17,6 @@ namespace Game
 
 		void Update();		
 		bool IsGameOver() { return false; }
-	private:
-		void CreatePlayer();          // <-- Added Function
-		GameEngine::Entity* m_player; // <-- Added Member
 	};
 }
 
