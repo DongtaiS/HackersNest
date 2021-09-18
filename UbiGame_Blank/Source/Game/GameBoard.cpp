@@ -7,12 +7,14 @@
 #include "GameEngine/EntitySystem/Components/CollidablePushComponent.h"
 #include "GameEngine/EntitySystem/Components/CreateBrickComponent.h"
 #include "GameEngine/EntitySystem/Components/TextRenderComponent.h"
+#include "GameEngine/EntitySystem/Components/PhysicsComponent.h"
 using namespace Game;
 
 GameBoard::GameBoard()
 {
 	CreatePlayer();
 	CreateBlock();
+	GameEngine::BlockCreationManager::CreateBlock(sf::Vector2f(0, 400), sf::Vector2f(500, 50), sf::Color::White);
 }
 
 
@@ -34,6 +36,7 @@ void GameBoard::CreatePlayer()
 
 	m_player->AddComponent<GameEngine::PlayerMovementComponent>();
 	m_player->AddComponent<GameEngine::CollidableComponent>();
+	m_player->AddComponent<GameEngine::PhysicsComponent>();
 }
 
 void GameBoard::CreateBlock()
@@ -42,11 +45,5 @@ void GameBoard::CreateBlock()
 	GameEngine::GameEngineMain::GetInstance()->AddEntity(m_block);
 	m_block->AddComponent<GameEngine::CollidablePushComponent>();
 	GameEngine::CreateBricksComponent* createBrickComp = static_cast<GameEngine::CreateBricksComponent*>(m_block->AddComponent<GameEngine::CreateBricksComponent>());
-
-	GameEngine::TextRenderComponent* text = static_cast<GameEngine::TextRenderComponent*>(m_block->AddComponent<GameEngine::TextRenderComponent>());
-	text->SetFont("Avant_Garde.ttf");
-	text->SetColor(sf::Color::White);
-	text->SetCharacterSizePixels(20);
-	text->SetFillColor(sf::Color::Transparent);
-	text->SetString("goal!!!");}
-
+	GameEngine::BlockCreationManager::CreateText(m_block, "GOAL", 20, sf::Color::White);
+}

@@ -18,6 +18,18 @@ Entity* BlockCreationManager::CreateBlock(sf::Vector2f pos, sf::Vector2f size, s
 	render->SetFillColor(color);
 	return entity;
 }
+
+TextRenderComponent* BlockCreationManager::CreateText(Entity* entity, std::string str, int size, sf::Color color)
+{
+	TextRenderComponent* text = static_cast<TextRenderComponent*>(entity->AddComponent<TextRenderComponent>());
+	text->SetString(str);
+	text->SetFont("Avant_Garde.ttf");
+	text->SetCharacterSizePixels(size);
+	text->SetColor(color);
+	text->SetFillColor(sf::Color::Transparent);
+	return text;
+}
+
 BlockCreationManager::BlockCreationManager()
 {
 }
