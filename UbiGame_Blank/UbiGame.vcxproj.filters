@@ -102,7 +102,7 @@
     <ClCompile Include="Source\GameEngine\Util\BlockCreationManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\GameEngine\EntitySystem\Components\PhysicsComponent.cpp">
+    <ClCompile Include="Source\GameEngine\EntitySystem\Components\EndComponent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -188,7 +188,7 @@
     <ClInclude Include="Source\GameEngine\Util\BlockCreationManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Source\GameEngine\EntitySystem\Components\PhysicsComponent.h">
+    <ClInclude Include="Source\GameEngine\EntitySystem\Components\EndComponent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
