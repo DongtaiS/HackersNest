@@ -23,5 +23,6 @@ namespace GameEngine
 			bool m_isMouseDown = false;
 			GameEngine::Entity* m_clickedEntity = nullptr;
 			sf::Vector2f m_mouseDownPos;
+			sf::Vector2f m_clickedEntityPos;
 		};
 }

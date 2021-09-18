@@ -90,6 +90,15 @@
     <ClCompile Include="Source\GameEngine\Util\MouseManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\GameEngine\EntitySystem\Components\ForLoopBlock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameEngine\EntitySystem\Components\MethodBlockComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameEngine\EntitySystem\Components\CreateBrickComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\GameEngine\GameEngineMain.h">
@@ -159,6 +168,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Source\GameEngine\Util\MouseManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameEngine\EntitySystem\Components\ForLoopBlock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameEngine\EntitySystem\Components\MethodBlockComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameEngine\EntitySystem\Components\CreateBrickComponent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
