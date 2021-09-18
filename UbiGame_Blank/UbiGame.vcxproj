@@ -198,8 +198,10 @@ XCOPY "$(SolutionDir)..\SFML-2.5.0\bin" "$(TargetDir)" /S /Y /I</Command>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\GameEngine\EntitySystem\Components\CreateBrickComponent.h" />
+    <ClInclude Include="Source\GameEngine\EntitySystem\Components\EndComponent.h" />
     <ClInclude Include="Source\GameEngine\EntitySystem\Components\ForLoopBlock.h" />
     <ClInclude Include="Source\GameEngine\EntitySystem\Components\MethodBlockComponent.h" />
+    <ClInclude Include="Source\GameEngine\EntitySystem\Components\PhysicsComponent.h" />
     <ClInclude Include="Source\GameEngine\Util\BlockCreationManager.h" />
     <ClInclude Include="Source\GameEngine\Util\MouseManager.h" />
     <ClInclude Include="Source\GameEngine\EntitySystem\Components\CollidablePushComponent.h" />
