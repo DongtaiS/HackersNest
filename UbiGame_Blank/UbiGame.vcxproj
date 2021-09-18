@@ -165,6 +165,7 @@ XCOPY "$(SolutionDir)..\SFML-2.5.0\bin" "$(TargetDir)" /S /Y /I</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\GameEngine\EntitySystem\Components\EndComponent.cpp" />
     <ClCompile Include="Source\GameEngine\EntitySystem\Components\CreateBrickComponent.cpp" />
     <ClCompile Include="Source\GameEngine\EntitySystem\Components\ForLoopBlock.cpp" />
     <ClCompile Include="Source\GameEngine\EntitySystem\Components\MethodBlockComponent.cpp" />
@@ -195,6 +196,7 @@ XCOPY "$(SolutionDir)..\SFML-2.5.0\bin" "$(TargetDir)" /S /Y /I</Command>
     <ClCompile Include="Source\GameEngine\EntitySystem\Components\SpriteRenderComponent.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\GameEngine\EntitySystem\Components\EndComponent.h" />
     <ClInclude Include="Source\GameEngine\EntitySystem\Components\CreateBrickComponent.h" />
     <ClInclude Include="Source\GameEngine\EntitySystem\Components\ForLoopBlock.h" />
     <ClInclude Include="Source\GameEngine\EntitySystem\Components\MethodBlockComponent.h" />
