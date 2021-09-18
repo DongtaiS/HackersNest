@@ -1,7 +1,7 @@
 #include "PhysicsComponent.h"
 #include <SFML/Window/Keyboard.hpp>
 #include "GameEngine/GameEngineMain.h"
-
+#include <iostream>
 using namespace GameEngine;
 
 PhysicsComponent::PhysicsComponent()
@@ -25,17 +25,18 @@ void PhysicsComponent::Update()
     float dt = GameEngine::GameEngineMain::GetTimeDelta();
     float currentY = GetEntity()->GetPos().y;
 
-    float gForce = 0.1f;
+    float gForce = 0.000000000000001f;
 
     if (dt > 0.f)
     {
         m_velocity.x = m_wantedVelocity.x;
         m_velocity.y += gForce * dt;
         sf::Vector2f deltavelocity = dt * m_velocity;
+        std::cout << deltavelocity.y << " " << dt << std::endl;
         GetEntity()->SetPos(GetEntity()->GetPos() + deltavelocity);
     }
 
-    Component::Update();
+    CollidablePhysicsComponent::Update();
 
     float deltaY = GetEntity()->GetPos().y + currentY;
     if (dt > 0.f)

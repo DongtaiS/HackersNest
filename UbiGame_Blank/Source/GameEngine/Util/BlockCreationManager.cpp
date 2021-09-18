@@ -1,5 +1,6 @@
 #include "BlockCreationManager.h"
 #include "GameEngine/EntitySystem/Components/RenderComponent.h";
+#include "GameEngine/GameEngineMain.h"
 using namespace GameEngine;
 
 BlockCreationManager::~BlockCreationManager()
@@ -16,6 +17,7 @@ Entity* BlockCreationManager::CreateBlock(sf::Vector2f pos, sf::Vector2f size, s
 	entity->SetSize(size);
 	RenderComponent* render = static_cast<RenderComponent*>(entity->AddComponent<RenderComponent>());
 	render->SetFillColor(color);
+	GameEngineMain::GetInstance()->AddEntity(entity);
 	return entity;
 }
 
