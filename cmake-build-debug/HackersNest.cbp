@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="HackersNest"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="HackersNest">
+				<Option output="/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug/HackersNest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/examples/shader"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Audio"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Network"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Window"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/Game"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Components"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/Util"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/Game"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/Game/GameComponents"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/Game/GameEntities"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/Util"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug/Makefile&quot;  VERBOSE=1 HackersNest"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="HackersNest/fast">
+				<Option output="/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug/HackersNest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/examples/shader"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Audio"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Network"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Window"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/Game"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Components"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/Util"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/Game"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/Game/GameComponents"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/Game/GameEntities"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components"/>
+					<Add directory="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/Util"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug/Makefile&quot;  VERBOSE=1 HackersNest/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/toastedwaffle/CLionProjects/HackersNest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/AlResource.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/Export.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/InputSoundFile.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/Listener.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/Music.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/OutputSoundFile.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/Sound.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/SoundBuffer.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/SoundBufferRecorder.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/SoundFileFactory.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/SoundFileFactory.inl">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/SoundFileReader.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/SoundFileWriter.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/SoundRecorder.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/SoundSource.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/SoundStream.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Config.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/GpuPreference.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/BlendMode.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/CircleShape.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Color.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/ConvexShape.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Drawable.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Export.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Font.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Glsl.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Glsl.inl">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Glyph.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Image.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/PrimitiveType.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Rect.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Rect.inl">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/RectangleShape.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/RenderStates.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/RenderTarget.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/RenderTexture.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/RenderWindow.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Shader.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Shape.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Sprite.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Text.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Texture.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Transform.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Transformable.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Vertex.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/VertexArray.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/VertexBuffer.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/View.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Main.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network/Export.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network/Ftp.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network/Http.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network/IpAddress.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network/Packet.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network/Socket.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network/SocketHandle.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network/SocketSelector.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network/TcpListener.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network/TcpSocket.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network/UdpSocket.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/OpenGL.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Clock.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Err.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Export.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/FileInputStream.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/InputStream.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Lock.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/MemoryInputStream.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Mutex.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/NativeActivity.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/NonCopyable.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Sleep.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/String.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/String.inl">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Thread.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Thread.inl">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/ThreadLocal.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/ThreadLocalPtr.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/ThreadLocalPtr.inl">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Time.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Utf.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Utf.inl">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Vector2.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Vector2.inl">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Vector3.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Vector3.inl">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/Clipboard.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/Context.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/ContextSettings.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/Cursor.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/Event.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/Export.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/GlResource.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/Joystick.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/Keyboard.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/Mouse.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/Sensor.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/Touch.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/VideoMode.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/Window.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/WindowHandle.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/WindowStyle.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/examples/ftp/Ftp.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/examples/island/Island.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/examples/joystick/Joystick.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/examples/opengl/OpenGL.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/examples/pong/Pong.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/examples/shader/Effect.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/examples/shader/Shader.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/examples/sockets/Sockets.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/examples/sockets/TCP.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/examples/sockets/UDP.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/examples/sound-capture/SoundCapture.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/examples/sound/Sound.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/examples/voip/Client.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/examples/voip/Server.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/examples/voip/VoIP.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/examples/win32/Win32.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/examples/window/Window.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Audio.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Audio/AlResource.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Audio/Export.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Audio/InputSoundFile.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Audio/Listener.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Audio/Music.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Audio/OutputSoundFile.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Audio/Sound.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Audio/SoundBuffer.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Audio/SoundBufferRecorder.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Audio/SoundFileFactory.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Audio/SoundFileFactory.inl">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Audio/SoundFileReader.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Audio/SoundFileWriter.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Audio/SoundRecorder.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Audio/SoundSource.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Audio/SoundStream.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Config.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/GpuPreference.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/BlendMode.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/CircleShape.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/Color.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/ConvexShape.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/Drawable.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/Export.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/Font.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/Glsl.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/Glsl.inl">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/Glyph.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/Image.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/PrimitiveType.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/Rect.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/Rect.inl">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/RectangleShape.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/RenderStates.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/RenderTarget.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/RenderTexture.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/RenderWindow.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/Shader.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/Shape.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/Sprite.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/Text.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/Texture.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/Transform.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/Transformable.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/Vertex.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/VertexArray.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/VertexBuffer.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Graphics/View.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Main.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Network.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Network/Export.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Network/Ftp.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Network/Http.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Network/IpAddress.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Network/Packet.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Network/Socket.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Network/SocketHandle.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Network/SocketSelector.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Network/TcpListener.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Network/TcpSocket.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Network/UdpSocket.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/OpenGL.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/Clock.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/Err.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/Export.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/FileInputStream.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/InputStream.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/Lock.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/MemoryInputStream.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/Mutex.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/NativeActivity.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/NonCopyable.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/Sleep.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/String.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/String.inl">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/Thread.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/Thread.inl">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/ThreadLocal.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/ThreadLocalPtr.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/ThreadLocalPtr.inl">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/Time.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/Utf.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/Utf.inl">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/Vector2.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/Vector2.inl">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/Vector3.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/System/Vector3.inl">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Window.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Window/Clipboard.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Window/Context.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Window/ContextSettings.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Window/Cursor.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Window/Event.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Window/Export.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Window/GlResource.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Window/Joystick.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Window/Keyboard.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Window/Mouse.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Window/Sensor.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Window/Touch.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Window/VideoMode.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Window/Window.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Window/WindowHandle.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/SFML-2.5.0/include/SFML/Window/WindowStyle.hpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/Game/GameBoard.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/Game/GameBoard.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Component.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Component.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Components/AnimationComponent.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Components/AnimationComponent.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Components/ButtonComponent.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Components/ButtonComponent.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Components/CollidableComponent.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Components/CollidableComponent.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Components/CollidablePhysicsComponent.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Components/CollidablePhysicsComponent.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Components/ParticleComponent.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Components/ParticleComponent.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Components/ParticleEmitterComponent.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Components/ParticleEmitterComponent.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Components/RenderComponent.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Components/RenderComponent.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Components/SoundComponent.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Components/SoundComponent.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Components/SpriteRenderComponent.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Components/SpriteRenderComponent.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Components/TextRenderComponent.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Components/TextRenderComponent.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Entity.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/EntitySystem/Entity.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/GameEngineMain.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/GameEngineMain.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/Util/AnimationManager.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/Util/AnimationManager.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/Util/ButtonManager.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/Util/ButtonManager.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/Util/CameraManager.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/Util/CameraManager.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/Util/CollisionManager.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/Util/CollisionManager.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/Util/SoundManager.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/Util/SoundManager.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/Util/TextureManager.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/GameEngine/Util/TextureManager.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_Blank/Source/main.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/Game/GameBoard.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/Game/GameBoard.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/Game/GameComponents/PlayerCameraComponent.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/Game/GameComponents/PlayerCameraComponent.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/Game/GameComponents/PlayerMovementComponent.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/Game/GameComponents/PlayerMovementComponent.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/Game/GameComponents/PlayerSoundComponent.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/Game/GameComponents/PlayerSoundComponent.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/Game/GameEntities/ObstacleEntity.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/Game/GameEntities/ObstacleEntity.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/Game/GameEntities/PlayerEntity.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/Game/GameEntities/PlayerEntity.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Component.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Component.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/AnimationComponent.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/AnimationComponent.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/ButtonComponent.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/ButtonComponent.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/CollidableComponent.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/CollidableComponent.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/CollidablePhysicsComponent.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/CollidablePhysicsComponent.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/ParticleComponent.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/ParticleComponent.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/ParticleEmitterComponent.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/ParticleEmitterComponent.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/RenderComponent.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/RenderComponent.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/SoundComponent.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/SoundComponent.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/SpriteRenderComponent.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/SpriteRenderComponent.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/TextRenderComponent.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/TextRenderComponent.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Entity.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/EntitySystem/Entity.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/GameEngineMain.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/GameEngineMain.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/Util/AnimationManager.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/Util/AnimationManager.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/Util/ButtonManager.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/Util/ButtonManager.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/Util/CameraManager.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/Util/CameraManager.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/Util/CollisionManager.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/Util/CollisionManager.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/Util/SoundManager.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/Util/SoundManager.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/Util/TextureManager.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/GameEngine/Util/TextureManager.h">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/UbiGame_FlappBird/Source/main.cpp">
+			<Option target="HackersNest"/>
+		</Unit>
+		<Unit filename="/Users/toastedwaffle/CLionProjects/HackersNest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

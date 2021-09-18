@@ -8,12 +8,14 @@ SOURCES = $(shell find ./ -name "*.cpp")
 OBJECTS = $(SOURCES:.cpp=.o)
 
 CXX = clang++ 
-CXXFLAGS = -std=c++17 -O2 -Wall
+CXXFLAGS = -std=c++17 -stdlib=libc++ -O2 -Wall
 
-INCLUDES =  -I$(ROOT)Source -I$(ROOT)../SFML-2.5.0/include
-LDFLAGS = -L$(ROOT)../SFML-2.5.0/lib -rpath $(ROOT)../SFML-2.5.0/lib
+INCLUDES =  -I$(ROOT)Source -I/Library/Frameworks/include
+LDFLAGS = -L/Library/Frameworks/lib -rpath /Library/Frameworks/lib $(inherited)
+
 
 LIBS = -lsfml-audio -lsfml-graphics -lsfml-system -lsfml-window
+#LIBS = -lsfml-audio-d.2.5.1 -lsfml-graphics -lsfml-system -lsfml-window
 
 TARGET = $(TARGET_DIR)output
 

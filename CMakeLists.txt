@@ -1,0 +1,360 @@
+cmake_minimum_required(VERSION 3.20)
+project(HackersNest)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(SFML-2.5.0/examples/shader)
+include_directories(SFML-2.5.0/Frameworks)
+include_directories(SFML-2.5.0/Frameworks/SFML.framework)
+include_directories(SFML-2.5.0/Frameworks/SFML.framework/Versions)
+include_directories(SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0)
+include_directories(SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers)
+include_directories(SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio)
+include_directories(SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics)
+include_directories(SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network)
+include_directories(SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System)
+include_directories(SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window)
+include_directories(SFML-2.5.0/include)
+include_directories(SFML-2.5.0/include/SFML)
+include_directories(SFML-2.5.0/include/SFML/Audio)
+include_directories(SFML-2.5.0/include/SFML/Graphics)
+include_directories(SFML-2.5.0/include/SFML/Network)
+include_directories(SFML-2.5.0/include/SFML/System)
+include_directories(SFML-2.5.0/include/SFML/Window)
+include_directories(UbiGame_Blank/Source/Game)
+include_directories(UbiGame_Blank/Source/GameEngine)
+include_directories(UbiGame_Blank/Source/GameEngine/EntitySystem)
+include_directories(UbiGame_Blank/Source/GameEngine/EntitySystem/Components)
+include_directories(UbiGame_Blank/Source/GameEngine/Util)
+include_directories(UbiGame_FlappBird/Source/Game)
+include_directories(UbiGame_FlappBird/Source/Game/GameComponents)
+include_directories(UbiGame_FlappBird/Source/Game/GameEntities)
+include_directories(UbiGame_FlappBird/Source/GameEngine)
+include_directories(UbiGame_FlappBird/Source/GameEngine/EntitySystem)
+include_directories(UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components)
+include_directories(UbiGame_FlappBird/Source/GameEngine/Util)
+
+add_executable(HackersNest
+        SFML-2.5.0/examples/ftp/Ftp.cpp
+        SFML-2.5.0/examples/island/Island.cpp
+        SFML-2.5.0/examples/joystick/Joystick.cpp
+        SFML-2.5.0/examples/opengl/OpenGL.cpp
+        SFML-2.5.0/examples/pong/Pong.cpp
+        SFML-2.5.0/examples/shader/Effect.hpp
+        SFML-2.5.0/examples/shader/Shader.cpp
+        SFML-2.5.0/examples/sockets/Sockets.cpp
+        SFML-2.5.0/examples/sockets/TCP.cpp
+        SFML-2.5.0/examples/sockets/UDP.cpp
+        SFML-2.5.0/examples/sound/Sound.cpp
+        SFML-2.5.0/examples/sound-capture/SoundCapture.cpp
+        SFML-2.5.0/examples/voip/Client.cpp
+        SFML-2.5.0/examples/voip/Server.cpp
+        SFML-2.5.0/examples/voip/VoIP.cpp
+        SFML-2.5.0/examples/win32/Win32.cpp
+        SFML-2.5.0/examples/window/Window.cpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/AlResource.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/Export.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/InputSoundFile.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/Listener.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/Music.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/OutputSoundFile.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/Sound.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/SoundBuffer.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/SoundBufferRecorder.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/SoundFileFactory.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/SoundFileFactory.inl
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/SoundFileReader.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/SoundFileWriter.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/SoundRecorder.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/SoundSource.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/SoundStream.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/BlendMode.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/CircleShape.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Color.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/ConvexShape.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Drawable.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Export.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Font.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Glsl.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Glsl.inl
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Glyph.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Image.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/PrimitiveType.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Rect.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Rect.inl
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/RectangleShape.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/RenderStates.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/RenderTarget.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/RenderTexture.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/RenderWindow.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Shader.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Shape.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Sprite.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Text.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Texture.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Transform.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Transformable.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/Vertex.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/VertexArray.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/VertexBuffer.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics/View.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network/Export.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network/Ftp.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network/Http.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network/IpAddress.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network/Packet.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network/Socket.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network/SocketHandle.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network/SocketSelector.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network/TcpListener.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network/TcpSocket.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network/UdpSocket.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Clock.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Err.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Export.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/FileInputStream.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/InputStream.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Lock.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/MemoryInputStream.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Mutex.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/NativeActivity.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/NonCopyable.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Sleep.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/String.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/String.inl
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Thread.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Thread.inl
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/ThreadLocal.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/ThreadLocalPtr.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/ThreadLocalPtr.inl
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Time.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Utf.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Utf.inl
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Vector2.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Vector2.inl
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Vector3.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System/Vector3.inl
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/Clipboard.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/Context.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/ContextSettings.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/Cursor.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/Event.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/Export.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/GlResource.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/Joystick.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/Keyboard.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/Mouse.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/Sensor.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/Touch.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/VideoMode.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/Window.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/WindowHandle.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window/WindowStyle.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Config.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/GpuPreference.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphics.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Main.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/OpenGL.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/System.hpp
+        SFML-2.5.0/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window.hpp
+        SFML-2.5.0/include/SFML/Audio/AlResource.hpp
+        SFML-2.5.0/include/SFML/Audio/Export.hpp
+        SFML-2.5.0/include/SFML/Audio/InputSoundFile.hpp
+        SFML-2.5.0/include/SFML/Audio/Listener.hpp
+        SFML-2.5.0/include/SFML/Audio/Music.hpp
+        SFML-2.5.0/include/SFML/Audio/OutputSoundFile.hpp
+        SFML-2.5.0/include/SFML/Audio/Sound.hpp
+        SFML-2.5.0/include/SFML/Audio/SoundBuffer.hpp
+        SFML-2.5.0/include/SFML/Audio/SoundBufferRecorder.hpp
+        SFML-2.5.0/include/SFML/Audio/SoundFileFactory.hpp
+        SFML-2.5.0/include/SFML/Audio/SoundFileFactory.inl
+        SFML-2.5.0/include/SFML/Audio/SoundFileReader.hpp
+        SFML-2.5.0/include/SFML/Audio/SoundFileWriter.hpp
+        SFML-2.5.0/include/SFML/Audio/SoundRecorder.hpp
+        SFML-2.5.0/include/SFML/Audio/SoundSource.hpp
+        SFML-2.5.0/include/SFML/Audio/SoundStream.hpp
+        SFML-2.5.0/include/SFML/Graphics/BlendMode.hpp
+        SFML-2.5.0/include/SFML/Graphics/CircleShape.hpp
+        SFML-2.5.0/include/SFML/Graphics/Color.hpp
+        SFML-2.5.0/include/SFML/Graphics/ConvexShape.hpp
+        SFML-2.5.0/include/SFML/Graphics/Drawable.hpp
+        SFML-2.5.0/include/SFML/Graphics/Export.hpp
+        SFML-2.5.0/include/SFML/Graphics/Font.hpp
+        SFML-2.5.0/include/SFML/Graphics/Glsl.hpp
+        SFML-2.5.0/include/SFML/Graphics/Glsl.inl
+        SFML-2.5.0/include/SFML/Graphics/Glyph.hpp
+        SFML-2.5.0/include/SFML/Graphics/Image.hpp
+        SFML-2.5.0/include/SFML/Graphics/PrimitiveType.hpp
+        SFML-2.5.0/include/SFML/Graphics/Rect.hpp
+        SFML-2.5.0/include/SFML/Graphics/Rect.inl
+        SFML-2.5.0/include/SFML/Graphics/RectangleShape.hpp
+        SFML-2.5.0/include/SFML/Graphics/RenderStates.hpp
+        SFML-2.5.0/include/SFML/Graphics/RenderTarget.hpp
+        SFML-2.5.0/include/SFML/Graphics/RenderTexture.hpp
+        SFML-2.5.0/include/SFML/Graphics/RenderWindow.hpp
+        SFML-2.5.0/include/SFML/Graphics/Shader.hpp
+        SFML-2.5.0/include/SFML/Graphics/Shape.hpp
+        SFML-2.5.0/include/SFML/Graphics/Sprite.hpp
+        SFML-2.5.0/include/SFML/Graphics/Text.hpp
+        SFML-2.5.0/include/SFML/Graphics/Texture.hpp
+        SFML-2.5.0/include/SFML/Graphics/Transform.hpp
+        SFML-2.5.0/include/SFML/Graphics/Transformable.hpp
+        SFML-2.5.0/include/SFML/Graphics/Vertex.hpp
+        SFML-2.5.0/include/SFML/Graphics/VertexArray.hpp
+        SFML-2.5.0/include/SFML/Graphics/VertexBuffer.hpp
+        SFML-2.5.0/include/SFML/Graphics/View.hpp
+        SFML-2.5.0/include/SFML/Network/Export.hpp
+        SFML-2.5.0/include/SFML/Network/Ftp.hpp
+        SFML-2.5.0/include/SFML/Network/Http.hpp
+        SFML-2.5.0/include/SFML/Network/IpAddress.hpp
+        SFML-2.5.0/include/SFML/Network/Packet.hpp
+        SFML-2.5.0/include/SFML/Network/Socket.hpp
+        SFML-2.5.0/include/SFML/Network/SocketHandle.hpp
+        SFML-2.5.0/include/SFML/Network/SocketSelector.hpp
+        SFML-2.5.0/include/SFML/Network/TcpListener.hpp
+        SFML-2.5.0/include/SFML/Network/TcpSocket.hpp
+        SFML-2.5.0/include/SFML/Network/UdpSocket.hpp
+        SFML-2.5.0/include/SFML/System/Clock.hpp
+        SFML-2.5.0/include/SFML/System/Err.hpp
+        SFML-2.5.0/include/SFML/System/Export.hpp
+        SFML-2.5.0/include/SFML/System/FileInputStream.hpp
+        SFML-2.5.0/include/SFML/System/InputStream.hpp
+        SFML-2.5.0/include/SFML/System/Lock.hpp
+        SFML-2.5.0/include/SFML/System/MemoryInputStream.hpp
+        SFML-2.5.0/include/SFML/System/Mutex.hpp
+        SFML-2.5.0/include/SFML/System/NativeActivity.hpp
+        SFML-2.5.0/include/SFML/System/NonCopyable.hpp
+        SFML-2.5.0/include/SFML/System/Sleep.hpp
+        SFML-2.5.0/include/SFML/System/String.hpp
+        SFML-2.5.0/include/SFML/System/String.inl
+        SFML-2.5.0/include/SFML/System/Thread.hpp
+        SFML-2.5.0/include/SFML/System/Thread.inl
+        SFML-2.5.0/include/SFML/System/ThreadLocal.hpp
+        SFML-2.5.0/include/SFML/System/ThreadLocalPtr.hpp
+        SFML-2.5.0/include/SFML/System/ThreadLocalPtr.inl
+        SFML-2.5.0/include/SFML/System/Time.hpp
+        SFML-2.5.0/include/SFML/System/Utf.hpp
+        SFML-2.5.0/include/SFML/System/Utf.inl
+        SFML-2.5.0/include/SFML/System/Vector2.hpp
+        SFML-2.5.0/include/SFML/System/Vector2.inl
+        SFML-2.5.0/include/SFML/System/Vector3.hpp
+        SFML-2.5.0/include/SFML/System/Vector3.inl
+        SFML-2.5.0/include/SFML/Window/Clipboard.hpp
+        SFML-2.5.0/include/SFML/Window/Context.hpp
+        SFML-2.5.0/include/SFML/Window/ContextSettings.hpp
+        SFML-2.5.0/include/SFML/Window/Cursor.hpp
+        SFML-2.5.0/include/SFML/Window/Event.hpp
+        SFML-2.5.0/include/SFML/Window/Export.hpp
+        SFML-2.5.0/include/SFML/Window/GlResource.hpp
+        SFML-2.5.0/include/SFML/Window/Joystick.hpp
+        SFML-2.5.0/include/SFML/Window/Keyboard.hpp
+        SFML-2.5.0/include/SFML/Window/Mouse.hpp
+        SFML-2.5.0/include/SFML/Window/Sensor.hpp
+        SFML-2.5.0/include/SFML/Window/Touch.hpp
+        SFML-2.5.0/include/SFML/Window/VideoMode.hpp
+        SFML-2.5.0/include/SFML/Window/Window.hpp
+        SFML-2.5.0/include/SFML/Window/WindowHandle.hpp
+        SFML-2.5.0/include/SFML/Window/WindowStyle.hpp
+        SFML-2.5.0/include/SFML/Audio.hpp
+        SFML-2.5.0/include/SFML/Config.hpp
+        SFML-2.5.0/include/SFML/GpuPreference.hpp
+        SFML-2.5.0/include/SFML/Graphics.hpp
+        SFML-2.5.0/include/SFML/Main.hpp
+        SFML-2.5.0/include/SFML/Network.hpp
+        SFML-2.5.0/include/SFML/OpenGL.hpp
+        SFML-2.5.0/include/SFML/System.hpp
+        SFML-2.5.0/include/SFML/Window.hpp
+        UbiGame_Blank/Source/Game/GameBoard.cpp
+        UbiGame_Blank/Source/Game/GameBoard.h
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Components/AnimationComponent.cpp
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Components/AnimationComponent.h
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Components/ButtonComponent.cpp
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Components/ButtonComponent.h
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Components/CollidableComponent.cpp
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Components/CollidableComponent.h
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Components/CollidablePhysicsComponent.cpp
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Components/CollidablePhysicsComponent.h
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Components/ParticleComponent.cpp
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Components/ParticleComponent.h
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Components/ParticleEmitterComponent.cpp
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Components/ParticleEmitterComponent.h
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Components/RenderComponent.cpp
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Components/RenderComponent.h
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Components/SoundComponent.cpp
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Components/SoundComponent.h
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Components/SpriteRenderComponent.cpp
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Components/SpriteRenderComponent.h
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Components/TextRenderComponent.cpp
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Components/TextRenderComponent.h
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Component.cpp
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Component.h
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Entity.cpp
+        UbiGame_Blank/Source/GameEngine/EntitySystem/Entity.h
+        UbiGame_Blank/Source/GameEngine/Util/AnimationManager.cpp
+        UbiGame_Blank/Source/GameEngine/Util/AnimationManager.h
+        UbiGame_Blank/Source/GameEngine/Util/ButtonManager.cpp
+        UbiGame_Blank/Source/GameEngine/Util/ButtonManager.h
+        UbiGame_Blank/Source/GameEngine/Util/CameraManager.cpp
+        UbiGame_Blank/Source/GameEngine/Util/CameraManager.h
+        UbiGame_Blank/Source/GameEngine/Util/CollisionManager.cpp
+        UbiGame_Blank/Source/GameEngine/Util/CollisionManager.h
+        UbiGame_Blank/Source/GameEngine/Util/SoundManager.cpp
+        UbiGame_Blank/Source/GameEngine/Util/SoundManager.h
+        UbiGame_Blank/Source/GameEngine/Util/TextureManager.cpp
+        UbiGame_Blank/Source/GameEngine/Util/TextureManager.h
+        UbiGame_Blank/Source/GameEngine/GameEngineMain.cpp
+        UbiGame_Blank/Source/GameEngine/GameEngineMain.h
+        UbiGame_Blank/Source/main.cpp
+        UbiGame_FlappBird/Source/Game/GameComponents/PlayerCameraComponent.cpp
+        UbiGame_FlappBird/Source/Game/GameComponents/PlayerCameraComponent.h
+        UbiGame_FlappBird/Source/Game/GameComponents/PlayerMovementComponent.cpp
+        UbiGame_FlappBird/Source/Game/GameComponents/PlayerMovementComponent.h
+        UbiGame_FlappBird/Source/Game/GameComponents/PlayerSoundComponent.cpp
+        UbiGame_FlappBird/Source/Game/GameComponents/PlayerSoundComponent.h
+        UbiGame_FlappBird/Source/Game/GameEntities/ObstacleEntity.cpp
+        UbiGame_FlappBird/Source/Game/GameEntities/ObstacleEntity.h
+        UbiGame_FlappBird/Source/Game/GameEntities/PlayerEntity.cpp
+        UbiGame_FlappBird/Source/Game/GameEntities/PlayerEntity.h
+        UbiGame_FlappBird/Source/Game/GameBoard.cpp
+        UbiGame_FlappBird/Source/Game/GameBoard.h
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/AnimationComponent.cpp
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/AnimationComponent.h
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/ButtonComponent.cpp
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/ButtonComponent.h
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/CollidableComponent.cpp
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/CollidableComponent.h
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/CollidablePhysicsComponent.cpp
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/CollidablePhysicsComponent.h
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/ParticleComponent.cpp
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/ParticleComponent.h
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/ParticleEmitterComponent.cpp
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/ParticleEmitterComponent.h
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/RenderComponent.cpp
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/RenderComponent.h
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/SoundComponent.cpp
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/SoundComponent.h
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/SpriteRenderComponent.cpp
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/SpriteRenderComponent.h
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/TextRenderComponent.cpp
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Components/TextRenderComponent.h
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Component.cpp
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Component.h
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Entity.cpp
+        UbiGame_FlappBird/Source/GameEngine/EntitySystem/Entity.h
+        UbiGame_FlappBird/Source/GameEngine/Util/AnimationManager.cpp
+        UbiGame_FlappBird/Source/GameEngine/Util/AnimationManager.h
+        UbiGame_FlappBird/Source/GameEngine/Util/ButtonManager.cpp
+        UbiGame_FlappBird/Source/GameEngine/Util/ButtonManager.h
+        UbiGame_FlappBird/Source/GameEngine/Util/CameraManager.cpp
+        UbiGame_FlappBird/Source/GameEngine/Util/CameraManager.h
+        UbiGame_FlappBird/Source/GameEngine/Util/CollisionManager.cpp
+        UbiGame_FlappBird/Source/GameEngine/Util/CollisionManager.h
+        UbiGame_FlappBird/Source/GameEngine/Util/SoundManager.cpp
+        UbiGame_FlappBird/Source/GameEngine/Util/SoundManager.h
+        UbiGame_FlappBird/Source/GameEngine/Util/TextureManager.cpp
+        UbiGame_FlappBird/Source/GameEngine/Util/TextureManager.h
+        UbiGame_FlappBird/Source/GameEngine/GameEngineMain.cpp
+        UbiGame_FlappBird/Source/GameEngine/GameEngineMain.h
+        UbiGame_FlappBird/Source/main.cpp)

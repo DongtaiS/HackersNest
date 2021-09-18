@@ -49,6 +49,8 @@ void MouseManager::Update()
         m_clickedEntity->SetPos(m_clickedEntityPos + (mousePos - m_mouseDownPos));
     }
 
+    }
+
 }
 
 MouseManager::MouseManager()
