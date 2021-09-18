@@ -9,6 +9,7 @@
 #include "Util/AnimationManager.h"
 #include "Util/ButtonManager.h"
 #include "Util/CameraManager.h"
+#include "Util/MouseManager.h"
 
 using namespace GameEngine;
 
@@ -164,6 +165,7 @@ void GameEngineMain::Update()
     if (m_gameBoard)
         m_gameBoard->Update();
 
+    GameEngine::MouseManager::GetInstance()->Update();
     UpdateEntities();
     RenderEntities();
 

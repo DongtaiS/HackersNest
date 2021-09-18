@@ -84,6 +84,12 @@
     <ClCompile Include="Source\GameEngine\EntitySystem\Components\PlayerMovementComponent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\GameEngine\EntitySystem\Components\CollidablePushComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameEngine\Util\MouseManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\GameEngine\GameEngineMain.h">
@@ -147,6 +153,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Source\GameEngine\EntitySystem\Components\PlayerMovementComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameEngine\EntitySystem\Components\CollidablePushComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameEngine\Util\MouseManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

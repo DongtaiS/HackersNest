@@ -1,37 +1,38 @@
-#include "CollidablePhysicsComponent.h"
+#include "CollidablePushComponent.h"
 
 #include "GameEngine/Util/CollisionManager.h"
 #include "GameEngine/EntitySystem/Entity.h"
 
 #include <vector>
+#include <iostream>
 
 using namespace GameEngine;
 
-CollidablePhysicsComponent::CollidablePhysicsComponent()
+CollidablePushComponent::CollidablePushComponent()
 {
 
 }
 
 
-CollidablePhysicsComponent::~CollidablePhysicsComponent()
+CollidablePushComponent::~CollidablePushComponent()
 {
 
 }
 
 
-void CollidablePhysicsComponent::OnAddToWorld()
+void CollidablePushComponent::OnAddToWorld()
 {
 	CollidableComponent::OnAddToWorld();
 }
 
 
-void CollidablePhysicsComponent::OnRemoveFromWorld()
+void CollidablePushComponent::OnRemoveFromWorld()
 {
 	CollidableComponent::OnRemoveFromWorld();
 }
 
 
-void CollidablePhysicsComponent::Update()
+void CollidablePushComponent::Update()
 {
 	//For the time being just a simple intersection check that moves the entity out of all potential intersect boxes
 	std::vector<CollidableComponent*>& collidables = CollisionManager::GetInstance()->GetCollidables();
@@ -41,13 +42,14 @@ void CollidablePhysicsComponent::Update()
 		CollidableComponent* colComponent = collidables[a];
 		if (colComponent == this)
 			continue;
-		colComponent->GetEntity();
+
 		AABBRect intersection;
 		AABBRect myBox = GetWorldAABB();
 		AABBRect colideBox = colComponent->GetWorldAABB();
 		if (myBox.intersects(colideBox, intersection))
 		{
-			sf::Vector2f pos = GetEntity()->GetPos();
+			sf::Vector2f pos = sf::Vector2f(0,0);
+			std::cout << pos.x << std::endl;
 			if (intersection.width < intersection.height)
 			{
 				if (myBox.left < colideBox.left)
@@ -62,8 +64,8 @@ void CollidablePhysicsComponent::Update()
 				else
 					pos.y += intersection.height;
 			}
-
-			GetEntity()->SetPos(pos);
+			std::cout << pos.x << std::endl;
+			GetEntity()->SetPos(GetEntity()->GetPos() + pos);
 		}
 	}
 }

@@ -1,7 +1,7 @@
 #pragma once
 #include "GameEngine/EntitySystem/Component.h"
 
-namespace Game
+namespace GameEngine
 {
 	class PlayerMovementComponent : public GameEngine::Component
 	{
@@ -10,5 +10,6 @@ namespace Game
 		~PlayerMovementComponent();
 
 		virtual void Update() override;
+		virtual void OnAddToWorld() override;
 	};
 }
