@@ -48,6 +48,8 @@ void CollidablePushComponent::Update()
 		AABBRect colideBox = colComponent->GetWorldAABB();
 		if (myBox.intersects(colideBox, intersection))
 		{
+			OnCollide(colComponent);
+			colComponent->OnCollide(this);
 			sf::Vector2f pos = sf::Vector2f(0,0);
 			if (intersection.width < intersection.height)
 			{

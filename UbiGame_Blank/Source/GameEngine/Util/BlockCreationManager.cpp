@@ -25,7 +25,7 @@ TextRenderComponent* BlockCreationManager::CreateText(Entity* entity, std::strin
 {
 	TextRenderComponent* text = static_cast<TextRenderComponent*>(entity->AddComponent<TextRenderComponent>());
 	text->SetString(str);
-	text->SetFont("Avant_Garde.ttf");
+	text->SetFont("Hack-Regular.ttf");
 	text->SetCharacterSizePixels(size);
 	text->SetColor(color);
 	text->SetFillColor(sf::Color::Transparent);

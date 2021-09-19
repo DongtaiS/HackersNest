@@ -26,16 +26,13 @@ EndComponent::~EndComponent()
 
 void EndComponent::SetPlayerCollider(CollidableComponent* playerCollider)
 {
-	m_player = playerCollider;
+	m_playerCollider = playerCollider;
 }
 
-void EndComponent::Update()
+void EndComponent::OnCollide(CollidableComponent* otherCollider)
 {
-	AABBRect intersection;
-	AABBRect myBox = GetWorldAABB();
-	AABBRect colideBox = m_player->GetWorldAABB();
-	if (myBox.intersects(colideBox, intersection))
+	if (otherCollider == m_playerCollider)
 	{
-		std::cout << "test";
+		std::cout << "playerCollision" << std::endl;
 	}
 }

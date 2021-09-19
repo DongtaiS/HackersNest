@@ -17,6 +17,7 @@ namespace GameEngine
 		virtual void OnAddToWorld() override;
 		virtual void OnRemoveFromWorld() override;
 
+		virtual void OnCollide(CollidableComponent* otherCollider);
 		const AABBRect GetLocalAABB() const { return m_AABBBox; }
 		const AABBRect GetWorldAABB() const;
 

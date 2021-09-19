@@ -230,6 +230,9 @@ XCOPY "$(SolutionDir)..\SFML-2.5.0\bin" "$(TargetDir)" /S /Y /I</Command>
   <ItemGroup>
     <Font Include="Resources\TheLima.otf" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\RedCircle.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

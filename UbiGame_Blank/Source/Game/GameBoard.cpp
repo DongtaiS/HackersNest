@@ -9,6 +9,7 @@
 #include "GameEngine/EntitySystem/Components/EndComponent.h"
 #include "GameEngine/EntitySystem/Components/TextRenderComponent.h"
 #include "GameEngine/EntitySystem/Components/PhysicsComponent.h"
+#include "GameEngine/EntitySystem/Components/SpriteRenderComponent.h"
 #include <iostream>
 #include <vector>
 using namespace Game;
@@ -35,10 +36,15 @@ void GameBoard::Update()
 
 void GameBoard::CreatePlayer()
 {
-	m_player = GameEngine::BlockCreationManager::CreateBlock(sf::Vector2f(10, 10), sf::Vector2f(200, 200), sf::Color::Red);
-
+	m_player = new GameEngine::Entity();
+	GameEngine::GameEngineMain::GetInstance()->AddEntity(m_player);
+	m_player->SetSize(sf::Vector2f(50,50));
+	m_player->SetPos(sf::Vector2f(10, 10));
 	m_player->AddComponent<GameEngine::PlayerMovementComponent>();
 	m_player->AddComponent<GameEngine::PhysicsComponent>();
+	GameEngine::SpriteRenderComponent* sprite = static_cast<GameEngine::SpriteRenderComponent*>(m_player->AddComponent<GameEngine::SpriteRenderComponent>());
+	sprite->SetTexture(GameEngine::eTexture::Player);
+	sprite->SetFillColor(sf::Color::Transparent);
 }
 
 void GameBoard::CreateBlock()
@@ -50,7 +56,7 @@ void GameBoard::CreateBlock()
 	GameEngine::EndComponent* end = static_cast<GameEngine::EndComponent*>(m_block->AddComponent<GameEngine::EndComponent>());
 	end->SetPlayerCollider(m_player->GetComponent<GameEngine::CollidableComponent>());
 
-	GameEngine::BlockCreationManager::CreateText(m_block, "GOAL", 20, sf::Color::White);
+	GameEngine::BlockCreationManager::CreateText(m_block, "Goal", 20, sf::Color::White);
 
 }
 
