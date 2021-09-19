@@ -201,4 +201,9 @@
   <ItemGroup>
     <Font Include="Resources\TheLima.otf" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\RedCircle.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
 </Project>

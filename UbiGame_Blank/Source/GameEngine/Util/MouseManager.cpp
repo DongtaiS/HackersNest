@@ -1,4 +1,5 @@
 #include "MouseManager.h"
+#include "GameEngine/EntitySystem/Components/PhysicsComponent.h"
 using namespace GameEngine;
 
 MouseManager* MouseManager::sm_instance = nullptr;
@@ -36,16 +37,22 @@ void MouseManager::Update()
         if (rect.contains(mousePos) && click)
         {
             m_clickedEntity = colComponent->GetEntity();
-            m_mouseDownPos = mousePos;
-            m_clickedEntityPos = colComponent->GetEntity()->GetPos();
+            PhysicsComponent* physics = m_clickedEntity->GetComponent<PhysicsComponent>();
+            if (physics)
+            {
+            }
         }
     }
 
     if (m_isMouseDown && m_clickedEntity)
     {
-        m_clickedEntity->SetPos(m_clickedEntityPos + (mousePos - m_mouseDownPos));
+        PhysicsComponent* physics = m_clickedEntity->GetComponent<PhysicsComponent>();
+        if (m_clickedEntity)
+        {
+            m_clickedEntity->SetPos(m_clickedEntity->GetPos() + (mousePos - m_lastMousePos));
+        }
     }
-
+    m_lastMousePos = mousePos;
 }
 
 

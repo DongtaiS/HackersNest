@@ -2,7 +2,7 @@
 
 #include "GameEngine/EntitySystem/Entity.h"
 #include "GameEngine/Util/CollisionManager.h"
-
+#include <iostream>
 using namespace GameEngine;
 
 CollidableComponent::CollidableComponent()
@@ -36,6 +36,9 @@ void CollidableComponent::OnRemoveFromWorld()
 	CollisionManager::GetInstance()->UnRegisterCollidable(this);
 }
 
+void CollidableComponent::OnCollide(CollidableComponent* otherCollider)
+{
+}
 
 void CollidableComponent::SetupDefaultBoundingBox()
 {
