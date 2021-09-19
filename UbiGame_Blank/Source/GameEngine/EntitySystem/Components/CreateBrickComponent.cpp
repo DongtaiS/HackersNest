@@ -2,10 +2,8 @@
 
 #include "GameEngine/GameEngineMain.h"
 #include "GameEngine/Util/BlockCreationManager.h"
-#include "GameEngine/EntitySystem/Components/PlayerMovementComponent.h"
-#include "GameEngine/EntitySystem/Components/CollidablePhysicsComponent.h"
 #include "GameEngine/EntitySystem/Components/CollidablePushComponent.h"
-
+#include <SFML/System/Vector2.hpp>
 
 using namespace GameEngine;
 
@@ -19,16 +17,8 @@ CreateBricksComponent::~CreateBricksComponent()
 }
 void CreateBricksComponent::Run(int iterations)
 {
-	//Create a brick
-	m_brick = new GameEngine::Entity();
-	GameEngine::GameEngineMain::GetInstance()->AddEntity(m_brick);
-
-	//m_brick->SetSize(sf::Vector2f(50.0f, 50.0f));
-	//m_brick->SetPos(sf::Vector2f(GetEntity()->GetPos().x + GetEntity()->GetSize().x/2 + iterations, GetEntity()->GetPos().y + GetEntity()->GetSize().y/2));
-
-	//GameEngine::RenderComponent* render = static_cast<GameEngine::RenderComponent*>(m_brick->AddComponent<GameEngine::RenderComponent>());
-	//m_brick->AddComponent<GameEngine::CollidablePushComponent>();
-	//render->SetFillColor(sf::Color::Blue);
-
-	m_brick = GameEngine::BlockCreationManager::CreateBlock(sf::Vector2f(20, 300), sf::Vector2f(50, 50), sf::Color::Blue);
+	Entity* brick = GameEngine::BlockCreationManager::CreateBlock(sf::Vector2f(GetEntity()->GetPos() + sf::Vector2f(GetEntity()->GetSize().x/2.f + 25 + iterations*50,0)), sf::Vector2f(70, 50), sf::Color::Blue);
+	GameEngine::BlockCreationManager::CreateText(brick, "Brick", 20, sf::Color::White);
+	brick->AddComponent<CollidablePushComponent>();
+	bricks.push_back(brick);
 }

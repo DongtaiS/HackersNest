@@ -11,6 +11,7 @@
 #include "GameEngine/EntitySystem/Components/TextRenderComponent.h"
 #include "GameEngine/EntitySystem/Components/PhysicsComponent.h"
 #include "GameEngine/EntitySystem/Components/SpriteRenderComponent.h"
+#include "GameEngine\EntitySystem\Components\BallMoveButton.h"
 #include <iostream>
 #include <vector>
 using namespace Game;
@@ -21,6 +22,20 @@ GameBoard::GameBoard()
 	CreateBlock();
 	GameEngine::Entity* floor = GameEngine::BlockCreationManager::CreateBlock(sf::Vector2f(100, 400), sf::Vector2f(300, 50), sf::Color::White);
 	floor->AddComponent<GameEngine::CollidablePhysicsComponent>();
+
+	GameEngine::Entity* forLoopBlock = GameEngine::BlockCreationManager::CreateBlock(sf::Vector2f(50, 200), sf::Vector2f(100, 50), sf::Color::Red);
+	GameEngine::BlockCreationManager::CreateText(forLoopBlock, "for: 3", 20, sf::Color::White);
+	GameEngine::ForLoopBlock* forLoop = static_cast<GameEngine::ForLoopBlock*>(forLoopBlock->AddComponent<GameEngine::ForLoopBlock>());
+
+	GameEngine::Entity* brickCreator = GameEngine::BlockCreationManager::CreateBlock(sf::Vector2f(50, 250), sf::Vector2f(175, 50), sf::Color::Red);
+	GameEngine::BlockCreationManager::CreateText(brickCreator, "createbrick()", 20, sf::Color::White);
+	GameEngine::CreateBricksComponent* brickComp = static_cast<GameEngine::CreateBricksComponent*>(brickCreator->AddComponent<GameEngine::CreateBricksComponent>());
+	brickCreator->AddComponent<GameEngine::CollidablePhysicsComponent>();
+
+	GameEngine::Entity* ballButton = GameEngine::BlockCreationManager::CreateBlock(sf::Vector2f(475, 25), sf::Vector2f(50, 50), sf::Color::Green);
+	
+	ballButton->AddComponent<GameEngine::BallMoveButton>()->SetBallPhysicsComp(m_player->GetComponent<GameEngine::PhysicsComponent>());
+
 }
 
 
@@ -61,4 +76,6 @@ void GameBoard::CreateBlock()
 
 	GameEngine::BlockCreationManager::CreateText(m_block, "Goal", 20, sf::Color::White);
 
+
+}
 
