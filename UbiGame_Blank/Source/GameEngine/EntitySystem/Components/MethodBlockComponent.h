@@ -11,4 +11,3 @@ namespace GameEngine
 		virtual void Run(int iterations);
 	};
 }
-

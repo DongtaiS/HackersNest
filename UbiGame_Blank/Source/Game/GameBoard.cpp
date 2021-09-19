@@ -2,6 +2,7 @@
 
 #include "GameEngine/GameEngineMain.h"
 #include "GameEngine/Util/BlockCreationManager.h"
+#include "GameEngine/EntitySystem/Components/ForLoopBlock.h"
 #include "GameEngine/EntitySystem/Components/PlayerMovementComponent.h"
 #include "GameEngine/EntitySystem/Components/CollidablePhysicsComponent.h"
 #include "GameEngine/EntitySystem/Components/CollidablePushComponent.h"
@@ -47,11 +48,14 @@ void GameBoard::CreateBlock()
 	m_block = GameEngine::BlockCreationManager::CreateBlock(sf::Vector2f(20, 300), sf::Vector2f(50, 50), sf::Color::Blue);
 	GameEngine::CreateBricksComponent* createBrickComp = static_cast<GameEngine::CreateBricksComponent*>(m_block->AddComponent<GameEngine::CreateBricksComponent>());
 
+
+
 	std::cout << m_player->GetAllComponents<GameEngine::Component>().size();
 	GameEngine::EndComponent* end = static_cast<GameEngine::EndComponent*>(m_block->AddComponent<GameEngine::EndComponent>());
 	end->SetPlayerCollider(m_player->GetComponent<GameEngine::CollidableComponent>());
 
 	GameEngine::BlockCreationManager::CreateText(m_block, "GOAL", 20, sf::Color::White);
-
 }
+
+
 
