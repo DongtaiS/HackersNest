@@ -40,7 +40,7 @@ void PhysicsComponent::Update()
         CollidablePhysicsComponent::Update();
 
         float deltaY = GetEntity()->GetPos().y - currentY;
-        if (dt > 0.f && deltaY > 0)
+        if (dt > 0.f && deltaY >= 0)
         {
             m_velocity.y = deltaY / dt;
         }

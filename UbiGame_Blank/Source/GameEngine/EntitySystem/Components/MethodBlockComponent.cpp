@@ -13,5 +13,5 @@ MethodBlockComponent::~MethodBlockComponent()
 
 void MethodBlockComponent::Run(int iterations)
 {
-	
+
 }

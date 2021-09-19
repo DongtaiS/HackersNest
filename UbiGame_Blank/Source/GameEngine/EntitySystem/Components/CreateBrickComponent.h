@@ -1,5 +1,6 @@
 #pragma once
 #include "GameEngine/EntitySystem/Components/MethodBlockComponent.h"
+#include <vector>
 namespace GameEngine
 {
 	class CreateBricksComponent : public GameEngine::MethodBlockComponent
@@ -8,7 +9,7 @@ namespace GameEngine
 		CreateBricksComponent();
 		~CreateBricksComponent();
 		virtual void Run(int iterations) override;
-		GameEngine::Entity* m_brick;
+		std::vector<Entity*> bricks;
 	};
 }
 
